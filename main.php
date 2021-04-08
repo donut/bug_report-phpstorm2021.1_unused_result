@@ -1,6 +1,4 @@
 <?php
-declare(strict_types=1);
-
 # This does seem to need to be in a separate file to cause the problem.
 require __DIR__ . '/Foo/base.php';
 
@@ -15,6 +13,6 @@ function goomba ()
   # the erroneous inspection.
   \Foo\noInspectionError();
 
-  # Call the "_" function by itself is fine.
+  # Call the "_" function directly is fine.
   \Foo\_();
 }
